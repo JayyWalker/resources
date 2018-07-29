@@ -1,4 +1,4 @@
-#JavaScript
+# JavaScript
 
 ## Links
 This is the list of Javascript resources I refer back to covering the basics of data types to using Ajax to building projects using the MEAN stack.
