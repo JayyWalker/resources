@@ -16,4 +16,4 @@ Adding a file to a new or existing repo using Cmder is quicker and easier than u
 **1** Open Cmder and change the current working directory to your project
 **2** Stage the file -**git add .**
 **3** Commit the files with a useful message **git commit -m "Add new file"**
-**4** Push to GitHub.com **git push origin master**
+**4** Push to GitHub.com **git push origin master** 
