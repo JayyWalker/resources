@@ -1,9 +1,12 @@
-## SAS
+# SAS
 
-[Getting Started](#Getting Started)
+[Getting Started](#getting-started)
 
+[Stats with SAS](#stats-with-sas)
 
-# Getting Started
+[Data step v Proc SQL](#Data-step-v-Proc-SQL)
+
+## Getting Started
 
 ### Clear Work Directory
 SAS uses a working directory, similar to temp tables in SQL server.  Your tables will live here until you clear them out or when you shut down your SAS window.  Use the code below to start from scratch and clear your work directory before running, or rerunning, your code.  Doing this makes sure you're not using old data or using extra memory to hold unused tables.
@@ -87,9 +90,7 @@ outfile = "E:\filepath.csv";
 run;
 ```
 
-# Stats with sas
-
-SAS gives you the ability to transform your data and perform statistical analysis.  This starter kit shows you how to produce descriptive statistics for your projects
+## Stats with SAS
 
 ### Frequency tables with Proc freq
 Creates a frequency tables for all variables

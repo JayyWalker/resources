@@ -1,11 +1,11 @@
+# SQL SELECT Statements
 This SQL starter kit of code snippets goes beyond the basic SELECT statement.  Select distinct, filtering, aggregate functions and joins
 
-
-
-Select Distinct
+## Select Distinct
+```sql
 select distinct
 eventname as 'event name', 
-eventdetails as 'event details', 
+eventdetails as 'event details',
 eventdate as 'event date'
 from
 event
@@ -14,18 +14,20 @@ countryid = 5
 order by
 eventdate asc
 limit 10;
+```
 
-
-Select with IN
+## Select with IN
+```sql
 select
 id, city, country
 from 
 address
 where 
 city in ('new york','amsterdam');
+```
 
-
-Select with OR
+## Select with OR
+```sql
 select
 id, city, country
 from 
@@ -33,16 +35,18 @@ address
 where 
 city = 'new york'
 or city = 'amsterdam';
+```
 
-
-Select with Count
+## Select with Count
+```sql
 select 
 count(city)
 from 
-address
+address;
+```
 
-
-Select with Concatenate
+## Select with Concatenate
+```sql
 select
 concat(name,' : ',city)
 from 
@@ -51,18 +55,20 @@ select 
 upper(concat(name,' : ',city))
 from 
 address;
+```
 
-
-Select with Like
+## Select with Like
+```sql
 select
 id, city, country
 from 
 address
 where 
 city like 'au%';
+```
 
-
-Select with Case
+## Select with Case
+```sql
 select
 id, city, country
 from 
@@ -73,18 +79,20 @@ when population < 300000 then 'high'
 else 'very high'
 end as population_level
 from city;
+```
 
-
-Aggregate functions
+## Aggregate functions
+```sql
 select
 continent, avg(population)
 from
 country
 group by
 continent;
+```
 
-
-Inner join
+## Inner join
+```sql
 select
 c.code,
 c.name,
@@ -96,9 +104,10 @@ countrylanguage  cl /*Results where the rows exist in both tables*/
 on c.code = cl.countrycode
 where 
 c.continent='africa';
+```
 
-
-Left join
+## Left join
+```sql
 select
 c.code,
 c.name,
@@ -110,3 +119,4 @@ countrylanguage cl /*Everything from table A and the rows that match in table B
 on c.code = cl.countrycode
 where 
 cl.continent='africa';
+```
