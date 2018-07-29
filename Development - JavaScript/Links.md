@@ -4,9 +4,9 @@
 This is the list of Javascript resources I refer back to covering the basics of data types to using Ajax to building projects using the MEAN stack.
 
 ### Getting started with Javascript
--[Cs50](https://www.youtube.com/watch?v=poT5Yd0Ag8I)
--[Traversy Media's Cmder: A better Windows command line](https://www.youtube.com/watch?v=Xm790AkFeK4)
--[DevTips Github for Noobs](https://www.youtube.com/watch?v=JPKOESR1k04)
+- [Cs50](https://www.youtube.com/watch?v=poT5Yd0Ag8I)
+- [Traversy Media's Cmder: A better Windows command line](https://www.youtube.com/watch?v=Xm790AkFeK4)
+- [DevTips Github for Noobs](https://www.youtube.com/watch?v=JPKOESR1k04)
 
 ### Data Types and Functions
 -[Cs50's Javascript](https://www.youtube.com/watch?v=ZyXuwTTKKM0)  
