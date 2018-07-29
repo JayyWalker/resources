@@ -4,13 +4,13 @@ When working with data in relational databases there are some key concepts to un
 Data is organised and stored in the form of tables
 A database is a collection of data placed in tables.
 
-### Relationship Categories in Databases
+#### Relationship Categories in Databases
 - one-to-one: Relationship between one husband and one wife
 - many-to-one: Relationship between many students and one school
 - one-to-many: Relationship between one customer and many bank accounts
 - many-to-many: Relationship between many students and many teachers
 
-### Primary Key v Foreign Key
+#### Primary Key v Foreign Key
 A primary key is a column that best identifies one unique row, and identifies each record as unique, like an ID
 
 - It ensures that there are no duplicates
