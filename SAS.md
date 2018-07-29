@@ -1,6 +1,6 @@
 ## SAS
 
-[Getting Started](#Getting Started)
+[Getting Started](#getting started)
 
 
 # Getting Started
