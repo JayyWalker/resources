@@ -1,5 +1,7 @@
 ## Modern Front End Developer Workflow - Gulp & Node
 
+Cheatsheets for [Udemy - Git a Web Developer Job](https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow) course by [Brad Schiff](https://www.udemy.com/user/bradschiff/) inspired by [Adam Skuse's cheatsheet](https://github.com/AdamSkuse/cheat-sheets/blob/master/Node-gulp-frontend-dev.md)Coursework completed for Brad Schiff's Udemy course Git a Web Developer Job: Mastering the Modern Workflow.
+
 [Key Concepts](#key-concepts)
 
 [Initialising a new project](#initialising-a-new-project)
@@ -21,32 +23,7 @@
 [Preparing files to go live](#preparing-files-to-go-live)
 
 
-## Key Concepts
 
-Cheatsheet for [Udemy - Git a Web Developer Job](https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow) course by [Brad Schiff](https://www.udemy.com/user/bradschiff/) inspired by [Adam Skuse's cheatsheet](https://github.com/AdamSkuse/cheat-sheets/blob/master/Node-gulp-frontend-dev.md)Coursework completed for Brad Schiff's Udemy course Git a Web Developer Job: Mastering the Modern Workflow.
-
-### Git Essentials
-Git, GitHub, and command-line basics to collaborate with other developers and deploy sites.
-Skills: Use the command line to manage branches, create a new repo, git init, git add, git commit, git status, git checkout, git merge.
-
-### Node.js
-An open source server framework that allows you to run JavaScript on the server.  Download from [https://nodejs.org/en/](https://nodejs.org/en/).  To check if you have Node.js installed, run this command in your terminal: ` node -v`
-
-### NPM (Node Package Manager)
-An ecosystem of open source libraries and repository of Node code, as well as third-party libraries such as Bootstrap and jQuery for easy installation and updating from the command line.  Comes packaged in with Node. To confirm that you have npm installed you can run this command in your terminal: ` npm -v`
-
-### Gulp
-A toolkit for automating tasks in your workflow.
-
-### CSS architecture
-Enhance CSS knowledge with techniques (BEM & PostCSS) to keep styles manageable.
-Skills: Use BEM methodology to organise CSS, create global file, modules and mixins using postcss.
-
-### Mobile first
-Speeding up sites with the mobile-first performance philosophy. Create responsive images, sprites and use a package to have images load just in time.
-
-### JavaScript
-JavaScript basics, ES6 module patterns (Babel & webpack), build task to compress and create dist folder, publish to Github pages.
 
 ## Initialising a new project
 
@@ -131,7 +108,7 @@ Adding stylesheet to *app/index.html*:
 <link rel="stylesheet" href="temp/styles/styles.css">
 ```
 
-**8.**
+**9.**
 CSS Architecture - Modular CSS
 ````
 |-app
@@ -149,7 +126,7 @@ CSS Architecture - Modular CSS
 
 ````
 
-**9.**
+**10.**
 Import css modules in *styles.css*
 
 ```
@@ -785,7 +762,8 @@ gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
 note that  styles was added as a dependency of usemin. if we had a scripts task, as in the original tutorial, this would also be added as a dependency here.
 
 #### Copying other files to our dist folder with build
-**1.** Add the following to *build.js*:
+**1.**
+Add the following to *build.js*:
 ```
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
   var pathsToCopy = [
@@ -802,7 +780,8 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
   .pipe(gulp.dest("./dist"));
 });
 ```
-**2.** Update build task at end of same file:
+**2.**
+Update build task at end of same file:
 ```
 gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin']);
 ```
