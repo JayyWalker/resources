@@ -1,7 +1,9 @@
 # SAS
 
 [Getting Started](#getting-started)
+
 [Stats with SAS](#stats-with-sas)
+
 [Data step v Proc SQL](#Data-step-v-Proc-SQL)
 
 ## Getting Started
