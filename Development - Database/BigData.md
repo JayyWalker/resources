@@ -19,7 +19,7 @@ You can’t talk about Big Data without hearing about Hadoop and Spark.  They ar
 |---|-------|--------|
 |Data Processing	| Performs batch and stream processing in memory.	| MapReduce performs batch processing stored on disk.
 | Graph Processing | Great at iterative workloads (Machine learning).	| Not ideal for iterative work.
-| Ease of use	Java, Python, Scala supported with user friendly APIs.	| No interactive mode but tools like Pig and Hive make it easier.
+| Ease of use	| Java, Python, Scala supported with user friendly APIs.	| No interactive mode but tools like Pig and Hive make it easier.
 | Costs	| Open source but uses large amounts of RAM. | Open source but requires more systems to distribute the disk.
 
 
@@ -32,7 +32,7 @@ The processing engine is only part of what frameworks like Hadoop and Spark do. 
 |---|-------|--------|
 | Data Analysis Tool	| Spark Native API | Pig
 | SQL Engine | Spark SQL | Hive
-| Machine Learning Library | MLLib	Mahout
+| Machine Learning Library | MLLib |	Mahout
 | Data Streaming | Spark Streaming | Storm
 | Graph Processing | Spark GraphX |	Giraph
 | Workbench | Spark Notebook | Hue
