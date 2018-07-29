@@ -1,20 +1,19 @@
+# Webpack
 
-## Webpack
-Blueprint in JavaScript (classes in other OOP languages). ECMA5 way of creating "classes". Later, after installing Babel, we can use the ECMA6 class constructor
-```
+Blueprint in JavaScript (classes in other OOP languages). ECMA5 way of creating "classes". Later, after installing Babel, we can use the ECMA6 class constructor.
+
+```javascript
 function Person(fullName, profession) {
 this.name = fullName;
 this.profession = profession;
 this.greet = function() {
-	console.log(“Hi, my name is “ + this.name + “ and I am a “ + this.profession “ .”;
+	console.log("Hi, my name is " + this.name + " and I am a " + this.profession " .");
 	}
 }
 ```
 
-JS doesn’t have a native ‘require’ function. We can use Webpack to allow us to store class constructors etc in separate .js files i.e. make it modular.
-
 **1.**
-Create: `app/assets/scripts/App.js` `app/assets/scripts/modules/`
+Create: app/assets/scripts/App.js app/assets/scripts/modules/
 
 Modules (e.g. Person.js) will go in the modules/ folder. Then, require them at the top of App.js e.g.
 `var Person = require(‘./modules/Person’);`
@@ -24,7 +23,8 @@ Webpack will compile all the js modules into a single file that the browser can 
 **2.** Install webpack globally `npm install webpack -g`
 
 **3.** Create *webpack.config.js* in the project root folder
-```
+
+```javascript
 module.exports = {
 		 entry: __dirname + "/app/assets/scripts/App.js",
 		 output: {
@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 
-**4.** Run `webpack` in node.js command prompt
+**4.** Run 'webpack' in node.js command prompt
 
 **5.** Update path to script file in index.html to point to assets/temp/scripts/App.js
 
@@ -45,7 +45,7 @@ Each js module (e.g. Person.js) will need an export line at the end, so that Web
 If using jquery in project, first install it with `npm install jquery --save`. Then, in each module that uses jquery, at the top put `var $ = require('jquery');`
 
 
-### Integrate Webpack in Gulp Automation  
+## Integrate Webpack in Gulp Automation  
 
 Browsersync will automatically update if a .js file is edited:
 
@@ -56,12 +56,13 @@ Browsersync will automatically update if a .js file is edited:
 **3.** Edit *gulpfile.js* by adding `require(‘./gulp/tasks/scripts’);`
 
 **4.** Add the following to *gulp/tasks/scripts.js*
-```
+
+```javascript
 var gulp = require(‘gulp’),
 webpack = require(‘webpack’);
 
-gulp.task(‘scripts’, function(callback) {
-	webpack(require(‘../../webpack.config.js’), function(err, stats) {
+gulp.task('scripts', function(callback) {
+	webpack(require('../../webpack.config.js'), function(err, stats) {
 		if (err) {
 			console.log(err.toString());
 		}
@@ -73,14 +74,13 @@ gulp.task(‘scripts’, function(callback) {
 ```
 
 **5.** In watch.js, after 'css' and 'watch' tasks, add:
-```
-watch(‘./app/assets/scripts/**/*.js), function() {
-	gulp.start(‘scriptsRefresh’);
+
+```javascript
+watch('./app/assets/scripts/**/*.js'), function() {
+	gulp.start('scriptsRefresh');
 })
 
-gulp.task(‘scriptsRefresh’, [‘scripts’], function() {
+gulp.task('scriptsRefresh', ['scripts'], function() {
 	browserSync.reload();
 )};
 ```
-
-Now, webpack will compile a js file for the browser to use from our main file and modules into App.js in the temp folder; and browserSync will automatically update the browser when any js files are edited. If there are any errors it will throw them up without causing browsersync to end.

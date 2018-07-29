@@ -1,5 +1,4 @@
-
-## Preparing files to go live
+# Preparing files to go live
 
 **1.** create *dist* folder
 
@@ -11,11 +10,11 @@ Install del so we can delete old files when creating a new build
 
 **3.** create *gulp/tasks/build.js*
 
-#### Process images
+## Process images
 
 **1.** Add following to *gulp/tasks/build.js*
 
-```
+```javascript
 var gulp = require('gulp'),
 imagemin = require('gulp-imagemin');
 
@@ -33,14 +32,14 @@ gulp.task('optimizeImages', function() {
 gulp.task('build', ['optimizeImages']);
 ```
 
-**2.** In *gulpfile.js* add `require(‘./gulp/tasks/build’);
+**2.** In *gulpfile.js* add `require('./gulp/tasks/build');`
 
-**3.** Add 'deleteDistFolder' task to *build.js* to clear out dist folder before each new build
+**3.** Add 'deleteDistFolder' task to build.js to clear out dist folder before each new build
 
-```
+```javascript
 var gulp = require('gulp'),
 imagemin = require('gulp-imagemin'),
-del = require('del'); //so we can delete the dist folder at start of each build
+del = require('del');
 
 gulp.task('deleteDistFolder', function() {
   return del("./dist");
@@ -59,10 +58,12 @@ gulp.task('optimizeImages', ['deleteDistFolder'], function() {
 
 gulp.task('build', ['deleteDistFolder', 'optimizeImages']);
 
-```
+
 N.B. 'deleteDistFolder' has been added as a dependency in the last line.
 
-#### Process CSS and Javascript with Usemin
+```
+
+## Process CSS and Javascript with Usemin
 We want to
 -copy to dist folder
 -compress
@@ -71,7 +72,8 @@ We want to
 **1.** `npm install gulp-usemin —save-dev`
 
 **2.** add to *build.js* so it looks like following:
-```
+
+```javascript
 var gulp = require('gulp'),
 imagemin = require('gulp-imagemin'),
 del = require('del'), //so we can delete the dist folder at start of each build
@@ -116,20 +118,22 @@ gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
 **4.** run `gulp build`
 this will create index.html in dist folder with usemin comments removed, and create script and css files in appropriate dist subfolders.
 
-#### Compression and versioning
+## Compression and versioning
 
 **1.** `npm install gulp-rev gulp-cssnano gulp-uglify --save-dev`
 (gulp-rev revisions files; gulp-cssnano compresses css; gulp-uglify compresses javascript)
 
 **2.** at top of *build.js* add:
-```
+
+```javascript
 rev = require('gulp-rev'),
 cssnano = require('gulp-cssnano'),
 uglify = require('gulp-uglify');
 ```
 
 **3.** Update 'usemin' task:
-```
+
+```javascript
 gulp.task('usemin', ['deleteDistFolder'], function() {
   return gulp.src("./app/index.html")
   .pipe(usemin({
@@ -143,7 +147,7 @@ NB If you're using ECMA6 syntax (e.g. arrow functions) in your JS and are not us
 
 **4.** Add a previewDist task to *build.js* that will let us preview our dist files using Browsersync:
 
-```
+```javascript
 var gulp = require('gulp'),
 imagemin = require('gulp-imagemin'),
 del = require('del'), //so we can delete the dist folder at start of each build
@@ -189,10 +193,11 @@ gulp.task('build', ['deleteDistFolder', 'optimizeImages', 'usemin']);
 ```
 note that  styles was added as a dependency of usemin. if we had a scripts task, as in the original tutorial, this would also be added as a dependency here.
 
-#### Copying other files to our dist folder with build
+## Copying other files to our dist folder with build
 **1.**
 Add the following to *build.js*:
-```
+
+```javascript
 gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
   var pathsToCopy = [
     './app/**/*',
@@ -208,8 +213,10 @@ gulp.task('copyGeneralFiles', ['deleteDistFolder'], function(){
   .pipe(gulp.dest("./dist"));
 });
 ```
+
 **2.**
 Update build task at end of same file:
+
 ```
 gulp.task('build', ['deleteDistFolder', 'copyGeneralFiles', 'optimizeImages', 'usemin']);
 ```

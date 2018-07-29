@@ -1,5 +1,4 @@
-
-## Post-css mixins
+# Post-css mixins
 
 Media queries for mobile responsiveness.
 Start css with a mobile-first approach by adding baseline smallest screen size then add mixin mediaqueries for progressively larger screens.
@@ -18,7 +17,7 @@ and update pipe in same file:
 
 **2.**
 Create reusable mixin blocks in file *app/assets/styles/base/_mixins.css*
-```
+```CSS
 @define-mixin atSmall {
   @media (min-width: 530px) {
     @mixin-content;
@@ -43,7 +42,7 @@ Import this file in *styles.css* `@import “base/_mixins.css”;`
 **3.**
 We can now use `@mixin [mixinName]` in stylesheets. Nest in selectors as follows:
 
-```
+```javascript
 .row{
 
 

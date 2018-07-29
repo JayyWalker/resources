@@ -1,4 +1,4 @@
-## Initialising a new project
+# Initialising a new project
 
 **1.**
 CD into the project folder and run `npm init`. This sets up NPM for the project, and creates *package.json*, which will store config info on the packages used in the project.
@@ -17,7 +17,7 @@ Install gulp package in your project. `npm install gulp --save-dev`
 **5.**
 Create *gulpfile.js* in project root `touch gulpfile.js `. Add placeholder tasks to the file:
 
-```
+```javascript
 var gulp = require(‘gulp’);
 
 	gulp.task('default', function() {
@@ -37,8 +37,9 @@ var gulp = require(‘gulp’);
 Install the gulp-watch package `npm install gulp-watch --save-dev`
 
 add to *gulpfile.js*:
-```
-watch = require('gulp-watch’);
+
+```javascript
+watch = require('gulp-watch');
 
 gulp.task('watch', function() {
   watch('./app/index.html',
@@ -51,7 +52,7 @@ gulp.task('watch', function() {
 **7.**
 Set up **post-css** with **autoprefixer** (automatic webkit prefixes to ensure browser css compatibility); **simple-vars** (use variables in css); **nested** (nesting selectors in css) and **import** (write modular css across different files).
 
-```
+```javascript
 npm install gulp-postcss --save-dev
 npm install autoprefixer --save-dev
 npm install postcss-simple-vars --save-dev
@@ -60,13 +61,12 @@ npm install postcss-import --save-dev
 ```
 
 add to *gulpfile.js*:
-```
-postcss = require('gulp-postcss’),
+```javascript
+postcss = require('gulp-postcss'),
 autoprefixer = require(‘autoprefixer’),
-cssvars = require('postcss-simple-vars’),
-nested = require('postcss-nested’),
+cssvars = require('postcss-simple-vars'),
+nested = require('postcss-nested'),
 cssImport = require('postcss-import');
-
 
 gulp.task('styles', function() {
   return gulp.src('app/assets/styles/styles.css')
@@ -119,13 +119,13 @@ BrowserSync package `npm install browser-sync --save-dev`
 
 **3.**
 Update *gulpfile.js*
-```
+```javascript
 var watch = require('gulp-watch'),
 browserSync = require('browser-sync').create();
 ```
 
 Update the watch task:
-```
+```javascript
 gulp.task('watch', function() {
 
   browserSync.init({
@@ -145,7 +145,7 @@ gulp.task('watch', function() {
 ```
 Adding cssinject task to *gulpfile.js*:
 
-```
+```javascript
 gulp.task('cssInject', ['styles'], function() {
   return gulp.src('app/temp/styles/**/*.css')
     .pipe(browserSync.stream());

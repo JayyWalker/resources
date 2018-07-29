@@ -1,5 +1,4 @@
-
-## Automatic Sprites
+# Automatic Sprites
 
 Configure Gulp to automatically create an Icon Sprite. Make our site load faster for visitors
 
@@ -8,7 +7,8 @@ Install svg-sprite package `npm install gulp-svg-sprite@1.3.1 --save-dev`
 
 **2.**
 In gulp/tasks create *sprites.js*
-```
+
+```javascript
 var gulp = require('gulp');
 svgSprite = require('gulp-svg-sprite');
 
@@ -35,7 +35,8 @@ Add to *gulpfile.js*`require('./gulp/tasks/sprites');`
 
 **4.**
 Create folder and file *gulp/templates/sprite.css*. In the sprite.css file add the following (moustache template `{`)
-```
+
+```CSS
 {{#shapes}}
   .icon--{{base}} {
     width: {{width.outer}}px;
@@ -45,6 +46,7 @@ Create folder and file *gulp/templates/sprite.css*. In the sprite.css file add t
   }
 {{/shapes}}
 ```
+
 **5.**
 Copy *sprite.css* file to *app/assets/styles/modules/_sprite.css* & Rename file to *_sprite.css* to match existing code
 
@@ -54,7 +56,7 @@ Edit *sprites.js*
 
 `rename = require('gulp-rename');`
 
-```
+```javascript
 gulp.task('copySpriteCSS', ['createSprite'], function(){
   return gulp.src('./app/temp/sprite/css/*.css')
     .pipe(rename('_sprite.css'))
@@ -69,7 +71,7 @@ Add to *app/assets/styles/styles.css* `@import "modules/_sprite";`
 **6.**
 Move svg files from temp folder to assets folder by Editing sprites.js
 
-```
+```javascript
 var config = {
   mode: {
     css: {
@@ -92,7 +94,7 @@ gulp.task('icons', ['createSprite','copySpriteGraphic', 'copySpriteCSS']);
 ```
 
 Edit *sprite.css* to remove repetitive icon urls
-```
+```javascript
 .icon{
   background-image: url('/assets/images/sprite/{{{sprite}}}');
 }
@@ -119,16 +121,18 @@ Clean task to delete duplicate .svg files (e.g, if you delete one icon, the new 
 Install del package `npm install del --save-dev`
 
 Updating *gulpfile.js* by creating beginClean task and adding it to `icons` task.
-```
+
+```javascript
 del = require('del');
 gulp.task('beginClean', function(){
   return del(['./app/temp/sprite', './app/assets/images/sprites']);
 });
 ```
 
+**8.**
 End the clean task to delete temp sprite folder
 
-```
+```javascript
 gulp.task('endClean', ['copySpriteGraphic', 'copySpriteCSS'], function(){
     return del('./app/temp/sprite');
 });
