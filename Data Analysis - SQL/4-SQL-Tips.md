@@ -16,13 +16,13 @@ Always use UTC for your timezone.  If you have a mix of non-UTC and UTC it makes
 ## 3. Understanding The Order Of Execution
 Understanding query order can help you understand how a query runs or worse, why your query won’t run.
 
-FROM – This includes any JOINs so if you are writing a large query with multiple tables consider using a CTE or subquery to do any filtering first.
-WHERE – To limit the joined dataset.
-GROUP BY – Collapses fields down with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
-HAVING – Performs the same function as the WHERE clause, but with aggregate values in the GROUP BY
-SELECT – Specifies the values and aggregations remaining in the data set after the grouping and pruning have occurred.
-ORDER BY – Returns the table sorted by a column or multiple columns.
-LIMIT – Specifies how many rows you want to be returned and can avoid returning too much data.
+- FROM – This includes any JOINs so if you are writing a large query with multiple tables consider using a CTE or subquery to do any filtering first.
+- WHERE – To limit the joined dataset.
+- GROUP BY – Collapses fields down with aggregate functions (COUNT, MAX, MIN, SUM, AVG) to group the result-set by one or more columns
+- HAVING – Performs the same function as the WHERE clause, but with aggregate values in the GROUP BY
+- SELECT – Specifies the values and aggregations remaining in the data set after the grouping and pruning have occurred.
+- ORDER BY – Returns the table sorted by a column or multiple columns.
+- LIMIT – Specifies how many rows you want to be returned and can avoid returning too much data.
 
 
 ## 4. The Limitations Of NULL
