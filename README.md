@@ -1,19 +1,10 @@
 ## 📚 Index
 
-
-
 <details>
-<summary>### 📃 Languages</summary>
-
-#### Command line interface
-
-- [Bash](languages/bash.sh)
-
-#### Imperative
+<summary>📃 Excel</summary>
+- [Dashboard Design](resources/data analysis - excel/dashboard-design.md)
 
 - [PHP](languages/php.php)
-
-#### Functional
 
 - [JavaScript](languages/javascript.js)
 
