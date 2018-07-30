@@ -3,6 +3,7 @@
 <details>
 <summary>📃 Excel</summary>
 
+
 - [Dashboard Design](Data_Excel/Dashboard-design.md)
 
 - [Text Function](Data_Excel/Text.md)
@@ -14,6 +15,7 @@
 
 <details>
 <summary>🗃️ SQL</summary>
+
 
 - [Getting Started](Data_SQL/1-SQL-Getting-started.md)
 
@@ -31,6 +33,7 @@
 <details>
 <summary>📦 Database</summary>
 
+
 - [Big Data](Development_Database/BigData.md)
 
 - [AWS Redshift](Development_Database/Redshift.md)
@@ -40,6 +43,7 @@
 
 <details>
 <summary>💼 Frontend</summary>
+
 
 - [Getting Started](Development_Frontend Workflow/1-Getting-started.md)
 
@@ -63,6 +67,7 @@
 <details>
 <summary>🌐 Javascript</summary>
 
+
 - [Data Types](Development_JavaScript/1-Datatypes.md)
 
 - [Arrays](Development_JavaScript/2-Arrays.md)
@@ -82,6 +87,7 @@
 
 <details>
 <summary>🔧 Tools</summary>
+
 
 - [Atom](Development_Tools/Atom.md)
 
