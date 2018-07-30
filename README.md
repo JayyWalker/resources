@@ -3,7 +3,7 @@
 <details>
 <summary>📃 Excel</summary>
 
-[Dashboard Design](Data Analysis - Excel/Dashboard-design.md)
+[Dashboard Design](resources/Data Analysis - Excel/Logical.md)
 
 - [PHP](languages/php.php)
 
