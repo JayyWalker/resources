@@ -2,7 +2,8 @@
 
 <details>
 <summary>📃 Excel</summary>
--[Dashboard Design](Data Analysis - Excel/Dashboard-design.md)
+
+[Dashboard Design](Data Analysis - Excel/Dashboard-design.md)
 
 - [PHP](languages/php.php)
 
