@@ -1,9 +1,9 @@
 ## 📚 Index
 
-### 📃 Languages
+
 
 <details>
-<summary>View cheatsheets</summary>
+<summary>### 📃 Languages</summary>
 
 #### Command line interface
 
