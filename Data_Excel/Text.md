@@ -19,7 +19,7 @@ Sometimes when importing data extra spaces can be added in the process.  To rem
 
 ```
 =TRIM(A1)
-``` 
+```
 
 
 ### Concatenate
