@@ -5,9 +5,9 @@ Building a Pivot table takes under a minute and is an incredibly useful tool for
 
 ## Set up
 
-1 - Highlight the sheet you want to use
-2 - Go to Insert Pivot Table on the ribbon
-3 - Select that you want it to be generated in a new sheet and let the wizard do the work
+1 - Highlight the sheet you want to use&nbsp;
+2 - Go to Insert Pivot Table on the ribbon&nbsp;
+3 - Select that you want it to be generated in a new sheet and let the wizard do the work&nbsp;
 
 
 ## Formatting
