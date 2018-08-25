@@ -10,6 +10,12 @@
 
 - [Logical Functions](Data_Excel/Logical.md)
 
+- [Pivot Tables](Data_Excel/Pivot_Tables.md)
+
+- [Tools](Data_Excel/Tools.md)
+
+- [VLOOKUP](Data_Excel/VLOOKUP.md)
+
 </details>
 
 
