@@ -36,3 +36,16 @@ This is the list of Javascript resources I refer back to covering the basics of
 - [MDN Javascript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [MDN Javascript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference)
 - [The tools of the JS trade](https://dev.to/kayis/the-tools-of-the-js-trade)
+
+### Project Organisation
+- [Devtips How does the internet work?](https://www.youtube.com/watch?v=8b7wObfC8VM)
+- [Why you should use Atom](http://helencodes.com/five-things-atom/)
+- [DevTips My Code Editor: Atom, Setup, Packages](https://www.youtube.com/watch?v=hPC6keUUiTA)
+
+### Github Resources
+- [Hello World](https://guides.github.com/activities/hello-world/)
+- [Getting your project on Github](https://guides.github.com/introduction/getting-your-project-on-github/)
+- [Understanding Github flow](https://guides.github.com/introduction/flow/)
+- [Github Pages](https://pages.github.com/)
+- [Getting started with Github pages](https://guides.github.com/features/pages/)
+- [Devtips Github for noobs](https://www.youtube.com/playlist?list=PLqGj3iMvMa4LFz8DZ0t-89twnelpT4Ilw)
