@@ -15,11 +15,12 @@ To change the case of a cell using one functions insert a new column to the righ
 ```
 
 ### Trim
-Sometimes when importing data extra spaces can be added in the process.  To remove these, we use the TRIM function:
+Sometimes when importing data extra spaces can be added in the process.  To remove these, we use the TRIM function.
 
 ```
 =TRIM(A1)
 ``` 
+
 
 ### Concatenate
 This function is useful for putting a First Name and Last Name field back together with one step.  Eg Pastes B2 and A2 together in one cell with one space in between.
