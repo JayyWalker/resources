@@ -8,13 +8,10 @@ If you're a beginner taking your first step into a coding course or just want a 
 - [General Assemblys Dash](https://dash.generalassemb.ly/) - a free, interactive introductory course that is all done in the browser.  The projects include a landing page, blog theme and restaurant website.
  - [Code Academy](https://www.codecademy.com/learn/make-a-website) - Most of the content is free, easy to follow and frames each lesson on a project. The Pro version includes more projects, quizzes and online help via chat.
 
-### HTML
+### HTML / CSS
 - [Devtips HTML Basics (playlist)](https://www.youtube.com/playlist?list=PLqGj3iMvMa4KlJn1pMYPVV3eYzxJlWcON)
-- [LearnWebCodes Learn HTML (playlist)](https://www.youtube.com/playlist?list=PLpcSpRrAaOaqiiUGIKOec4pb4LMsBRfnl)
 - [Wired.com: HTML cheatsheet](https://www.wired.com/2010/02/html_cheatsheet/)
 - [Everything that could go in the head](https://github.com/joshbuchea/HEAD) 
- 
-### CSS
 - [Devtips CSS Basics (playlist)](https://www.youtube.com/playlist?list=PLqGj3iMvMa4IOmy04kDxh_hqODMqoeeCy)
 - [LearnWebCodes Learn CSS (playlist)](https://www.youtube.com/playlist?list=PLpcSpRrAaOaqfJ5uIRikm04Gd5X5aiqSB)
 - [MDN Solving problems with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Howto)
@@ -26,10 +23,9 @@ If you're a beginner taking your first step into a coding course or just want a 
 - [The tools of the JS trade](https://dev.to/kayis/the-tools-of-the-js-trade)
 - [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)	 	 
 - [Modern JavaScript Cheatsheet](https://github.com/mbeaudru/modern-js-cheatsheet) 
-- [LearnCode.Academy's ES6 Cheatsheet #1 (video)](https://youtu.be/AfWYO8t7ed4)
-- [LearnCode.Academy's ES6 Cheatsheet #2 (video)](https://youtu.be/LmL0Gh193M0)
+- [LearnCode.Academy's ES6 (video)](https://youtu.be/AfWYO8t7ed4)
 
-### Transport and Servers
+### AJAX and Servers
 - [Cs50's AJAX (video)](https://youtu.be/FtefVGIgAfA)
 - [LearnWebCode's JSON and AJAX Tutorial: With Real Examples (video)](https://youtu.be/rJesac0_Ftw)
 - [Traversy Media's Node.js Tutorial for Absolute Beginners (video)](https://youtu.be/U8XF6AFGqlc)
