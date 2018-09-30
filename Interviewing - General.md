@@ -1,4 +1,4 @@
-#Interviewing Data Analysts
+# Interviewing Data Analysts
 
 ## Business and Career
 - What unique skills you think can you add on to our team?
@@ -40,4 +40,4 @@
 - Have you had to deal with data that is inappropriate to share with the intended audience?  How do you determine this?
 - What would this typically look like?  Repeatable vs one-off, hows this different?  What technologies would you typically use?
 - Have you ever increased the value of a dataset/dashboard after you have published the dataset, say a few months later?
-L- ooking for monitoring usage or looking to improve dataset based on consulting-
+Looking for monitoring usage or looking to improve dataset based on consulting
