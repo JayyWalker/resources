@@ -41,3 +41,29 @@
 - What would this typically look like?  Repeatable vs one-off, hows this different?  What technologies would you typically use?
 - Have you ever increased the value of a dataset/dashboard after you have published the dataset, say a few months later?
 Looking for monitoring usage or looking to improve dataset based on consulting
+
+## SQL
+
+- How will you calculate the number of days between two dates? 
+
+- Describe the CASE statement, when you would use it and the syntax required
+
+- What is the difference between DELETE and TRUNCATE in SQL? 
+
+- What is the difference between UNION and UNION ALL?
+
+- What is the difference between an OUTER JOIN and an INNER JOIN; what types of OUTER JOINS are there.  What does a CROSS JOIN do, when would you use it?
+
+- Provide an example where you have had to deal with time based data from multiple time zones; how do you get them to a standard format
+
+- Describe the difference between a function and a stored procedure
+
+- A query over a large quantity of data was running ok, but over the last couple of days it seems to be running really slow, describe what you would do to understand why this might be the case
+
+- What is a database Query Execution Plan?
+
+- How would you create random dummy data between 1 and 150 in SQL?
+
+- Write a Query to find all Employee whose name contains the word "Rich", regardless of case.
+
+- How can you copy the structure of a table into another table without copying the data? 
