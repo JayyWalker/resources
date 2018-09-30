@@ -23,10 +23,7 @@
 ## Cleanse, Shape, Transform and Enrich
 - Dealing with ambiguity and data quality challenges - what do you do?  What level of accuracy is enough?
 - Give an example of when you proposed changes to improve data reliability and quality. Did these changes end up being implemented? If not, why not?
-- List out some of the best practices for data cleaning, especially for large datasets?  Looking for:
--- For large datasets cleanse it iteratively and improve the data with each iteration until you achieve a good data quality
--- For large datasets, break them into small data. Working with less data will increase your iteration speed
--- Script or track of every date cleaning operation, so you can alter changes or remove operations if required
+- List out some of the best practices for data cleaning, especially for large datasets?  (Looking for: cleanse it iteratively and improve the data with each iteration until you achieve a good data quality. Break them into small datasets to increase your iteration speed and script or track of every date cleaning operation, so you can alter changes or remove operations if required)
 
 ## Data Analytics
 - Which tools are you familiar with?  What’s your preference?
